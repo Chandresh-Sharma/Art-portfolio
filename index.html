@@ -43,21 +43,25 @@ body{
   to{opacity:1; transform:translateY(0);}
 }
 
-/* HERO */
+
+/* HERO (CIRCULAR ICON STYLE) */
 .hero{
-  width:100%;
-  max-width:550px;   /* smaller width */
-  height:160px;      /* fixed medium height */
-  margin:40px auto 20px;
-  border-radius:12px;
+  width:220px;          /* size of circle */
+  height:220px;
+  margin:50px auto 25px;
+  border-radius:50%;    /* makes it circular */
   overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
 .hero img{
   width:100%;
   height:100%;
-  object-fit:cover;   /* prevents stretching */
+  object-fit:cover;
+  transform:scale(1.1);   /* slight zoom */
 }
+
+
 
 
 /* TITLES */
@@ -187,28 +191,27 @@ body{
   </p>
 
   <div class="button-grid">
-    <button class="category-btn" onclick="showPage('anime')">ANIME</button>
+    <button class="category-btn" onclick="showPage('digital-art')">DIGITAL-ART</button>
     <button class="category-btn" onclick="showPage('sketches')">SKETCHES</button>
-    <button class="category-btn" onclick="showPage('webtoons')">WEBTOONS</button>
-    <button class="category-btn" onclick="showPage('character')">CHARACTER DESIGN</button>
+    <button class="category-btn" onclick="showPage('traditional')">TRADITIONAL</button>
   </div>
 
 </div>
 
 <!-- ANIME PAGE -->
-<div class="page" id="anime">
+<div class="page" id="digital-art">
   <div class="back-btn">
     <button onclick="showPage('home')">← Back</button>
   </div>
-  <h2 class="section-title">ANIME STYLE</h2>
+  <h2 class="section-title">DIGITAL-ART</h2>
   <div class="gallery">
-    <img src="images-art/lips.jpeg">
-    <img src="images-art/eye.jpeg">
-    <img src="images-art/tanjiro.jpeg">
-    <img src="images-art/cherry.jpeg">
-    <img src="images-art/blue-fruit.jpeg">
-    <img src="images-art/leaf.jpeg">
-    <img src="images-art/octpus.jpeg">
+    <img src="images-art/webtoon/girl.jpeg">
+    <img src="images-art/webtoon/elf.jpeg">
+    <img src="images-art/webtoon/demon-slayer.jpeg">
+    <img src="images-art/webtoon/smile-girl.jpeg">
+    <img src="images-art/digital-art/girl.jpeg">
+    <img src="images-art/digital-art/clove.jpeg">
+    <img src="images-art/kitchen.jpeg">
   </div>
 </div>
 
@@ -222,32 +225,24 @@ body{
     <img src="images-art/sketch/girl.jpeg">
     <img src="images-art/sketch/anime.jpeg">
     <img src="images-art/sketch/parrot.jpeg">
+    <img src="images-art/lady-sketch.jpeg">
   </div>
 </div>
 
 <!-- WEBTOONS PAGE -->
-<div class="page" id="webtoons">
+<div class="page" id="traditional">
   <div class="back-btn">
     <button onclick="showPage('home')">← Back</button>
   </div>
-  <h2 class="section-title">WEBTOONS</h2>
+  <h2 class="section-title">TRADITIONAL</h2>
   <div class="gallery">
-    <img src="images-art/webtoon/smile-girl.jpeg">
-    <img src="images-art/webtoon/demon-slayer.jpeg">
-    <img src="images-art/webtoon/elf.jpeg">
-    <img src="images-art/webtoon/girl.jpeg">
-  </div>
-</div>
-
-<!-- CHARACTER DESIGN PAGE -->
-<div class="page" id="character">
-  <div class="back-btn">
-    <button onclick="showPage('home')">← Back</button>
-  </div>
-  <h2 class="section-title">CHARACTER DESIGN</h2>
-  <div class="gallery">
-    <img src="images-art/digital-art/girl.jpeg">
-    <img src="images-art/digital-art/clove.jpeg">
+    <img src="images-art/lips.jpeg">
+    <img src="images-art/eye.jpeg">
+    <img src="images-art/tanjiro.jpeg">
+    <img src="images-art/cherry.jpeg">
+    <img src="images-art/book.jpeg">
+    <img src="images-art/blue-fruit.jpeg">
+    <img src="images-art/octpus.jpeg">
   </div>
 </div>
 
